@@ -1,9 +1,6 @@
 openai==0.28.0
 flask
 langchain
-chrmadb
-faiss-cpu
-transformers
 beautifulsoup4
 scrapy
 streamlit
