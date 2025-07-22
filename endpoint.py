@@ -14,3 +14,26 @@ def generate_blog_endpoint():
     """
     data = request.json
     topic = data.get("topic", "")
+
+
+    if not topic:
+        return jsonify({"error": "Topic is required"}), 400
+    
+
+
+    blog = generate_blog(topic)
+
+
+    # Save to file
+    blog_filename = f"blogs/{topic.replace(' ', '_').lower()}.md"
+    with open(blog_filename, "w", encoding="utf-8") as f:
+        f.write(blog)
+
+    
+    return jsonify({"message": "Blog generated successfully!", "blog": blog})
+
+
+
+if __name__ == "__main__":
+    os.makedirs("blogs", exist_ok=True)
+    app.run(debug=True)
