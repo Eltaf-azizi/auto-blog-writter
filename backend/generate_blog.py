@@ -31,4 +31,8 @@ def generate_blog(topic):
 
     prompt = PromptTemplate(input_variables=['topic'], template=template)
     llm = ChatOpenAI(model_name = "gpt-turbo-3.5", openai_api_key = OPENAI_API_KEY)
+    chain = LLMChain(llm = llm, prompt = prompt)
+
+
+    return chain.run(topic = topic)
 
