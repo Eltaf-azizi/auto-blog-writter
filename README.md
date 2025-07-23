@@ -36,3 +36,17 @@ git clone https://github.com/your-username/auto-blog-writter.git
 cd auto-blog-writter
 ```
 
+### 2. Create a Virtual Environment
+```bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate     # On Windows: venv\Scripts\activate
+```
+### 3. Install Dependencies
+```bash
+Copy
+Edit
+pip install -r requirements.txt
+```
+
