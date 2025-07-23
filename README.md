@@ -10,3 +10,20 @@
 - Easy to configure and run locally or in Docker
 - Modular structure for better maintainability
 
+
+## Project Structure
+
+    .github/workflows/
+    .gitkeep
+    backend/
+    ├── __pycache__/
+    ├── generate_blog.py
+    .env
+    app.py
+    Dockerfile
+    endpoint.py
+    README.md
+    requirements.txt
+    template.py
+    
+
