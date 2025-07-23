@@ -50,3 +50,19 @@ Edit
 pip install -r requirements.txt
 ```
 
+### 4. Add Your Environment Variables
+Create a .env file in the root directory:
+
+```ini
+Copy
+Edit
+OPENAI_API_KEY=your_openai_key_here
+```
+
+### 5. Run the App
+```bash
+Copy
+Edit
+python app.py
+```
+
