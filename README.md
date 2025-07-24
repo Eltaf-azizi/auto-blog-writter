@@ -38,15 +38,13 @@ cd auto-blog-writter
 
 ### 2. Create a Virtual Environment
 ```bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 ```
 ### 3. Install Dependencies
 ```bash
-Copy
-Edit
+
 pip install -r requirements.txt
 ```
 
@@ -54,30 +52,44 @@ pip install -r requirements.txt
 Create a .env file in the root directory:
 
 ```ini
-Copy
-Edit
+
 OPENAI_API_KEY=your_openai_key_here
 ```
 
 ### 5. Run the App
 ```bash
-Copy
-Edit
+
 python app.py
 ```
 
 ## 🐳 Run with Docker (Optional)
 #### Build the Image
 ```bash
-Copy
-Edit
+
 docker build -t auto-blog-writter .
 ```
 #### Run the Container
 ```bash
-Copy
-Edit
 docker run -p 5000:5000 auto-blog-writter
 ```
 
+## 📡 Example API Usage
+#### Endpoint: `/generate`
+Request:
+
+```json
+
+{
+  "topic": "Future of Artificial Intelligence"
+}
+```
+Response:
+
+```json
+
+{
+  "title": "The Future of Artificial Intelligence",
+  "content": "Artificial Intelligence continues to shape our world..."
+}
+```
 
