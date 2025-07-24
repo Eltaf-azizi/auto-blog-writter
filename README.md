@@ -66,3 +66,18 @@ Edit
 python app.py
 ```
 
+## 🐳 Run with Docker (Optional)
+#### Build the Image
+```bash
+Copy
+Edit
+docker build -t auto-blog-writter .
+```
+#### Run the Container
+```bash
+Copy
+Edit
+docker run -p 5000:5000 auto-blog-writter
+```
+
+
