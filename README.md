@@ -103,4 +103,8 @@ Response:
  - CMS and blog integration options
 
 
+## 🤝 Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+<h3 align="center">Happy Coding!</h3>
 
