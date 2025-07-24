@@ -93,3 +93,14 @@ Response:
 }
 ```
 
+## 🛠️ Future Improvements
+ - Add frontend interface
+
+ - Export blogs in different formats (PDF, HTML)
+
+ - Support for more AI models
+
+ - CMS and blog integration options
+
+
+
